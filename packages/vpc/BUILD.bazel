@@ -1,0 +1,31 @@
+load("//tools:defaults.bzl", "npm_package", "ts_library")
+
+package(default_visibility = ["//visibility:public"])
+
+ts_library(
+    name = "vpc",
+    srcs = glob([
+        "*.ts",
+        "src/**/*.ts",
+    ]),
+    deps = [
+        "@npm//@aws-cdk/aws-cloudtrail",
+        "@npm//@aws-cdk/aws-ec2",
+        "@npm//@aws-cdk/aws-iam",
+        "@npm//@aws-cdk/cdk",
+        "@npm//@types/node",
+    ],
+)
+
+npm_package(
+    name = "npm_package",
+    srcs = [
+        "package.json",
+    ],
+    tags = [
+        # "release-with-framework",
+    ],
+    deps = [
+        ":vpc",
+    ],
+)

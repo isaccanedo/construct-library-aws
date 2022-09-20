@@ -1,0 +1,26 @@
+{
+  "name": "toolkit-integration",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "Integration tests for @amzn/toolkit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/angular.git"
+  },
+  "dependencies": {
+    "@amzn/toolkit": "file:../../dist/packages-dist/toolkit",
+    "typescript": "file:../../node_modules/typescript"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "file:../../node_modules/@aws-cdk/assert",
+    "@aws-cdk/assets": "file:../../node_modules/@aws-cdk/assets",
+    "@aws-cdk/cdk": "file:../../node_modules/@aws-cdk/cdk",
+    "@aws-cdk/aws-lambda": "file:../../node_modules/@aws-cdk/aws-lambda",
+    "@aws-cdk/aws-sam": "file:../../node_modules/@aws-cdk/aws-sam",
+    "@aws-cdk/aws-s3": "file:../../node_modules/@aws-cdk/aws-s3",
+    "aws-cdk": "file:../../node_modules/aws-cdk"
+  },
+  "scripts": {
+    "test": "echo 'Tests disabled pending CDK team' || cdk-integ-assert"
+  }
+}

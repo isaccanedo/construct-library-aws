@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "outDir": "../dist/all/@constructs",
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@constructs/*": ["./*"]
+    },
+    "rootDir": ".",
+    "inlineSourceMap": true,
+    "lib": ["es5", "dom", "es2015.promise", "es2015.collection", "es2015.iterable", "es2015.core"],
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "target": "es5"
+  },
+  "bazelOptions": {
+    "suppressTsconfigOverrideWarnings": true
+  }
+}

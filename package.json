@@ -1,0 +1,56 @@
+{
+  "name": "component-srcs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A toolkit for developing applications using the AWS CDK",
+  "scripts": {
+    "bazel:format": "find . -type f \\( -name \"*.bzl\" -or -name WORKSPACE -or -name BUILD -or -name BUILD.bazel \\) ! -path \"*/node_modules/*\" | xargs buildifier -v --warnings=attr-cfg,attr-license,attr-non-empty,attr-output-default,attr-single-file,constant-glob,ctx-args,depset-iteration,depset-union,dict-concatenation,duplicated-name,filetype,git-repository,http-archive,integer-division,load,load-on-top,native-build,native-package,output-group,package-name,package-on-top,positional-args,redefined-variable,repository-name,same-origin-load,string-iteration,unused-variable",
+    "bazel:lint": "yarn bazel:format --lint=warn",
+    "bazel:lint-fix": "yarn bazel:format --lint=fix",
+    "bazel": "bazel"
+  },
+  "author": "Adam Plumer",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.9.0 <11.0.0",
+    "yarn": ">=1.12.1 <=1.16.0"
+  },
+  "devDependencies": {
+    "@bazel/bazel": "^0.26.0",
+    "@bazel/buildifier": "^0.25.1",
+    "@bazel/ibazel": "^0.10.3",
+    "tslint": "^5.16.0"
+  },
+  "dependencies": {
+    "@aws-cdk/assert": "^0.33.0",
+    "@aws-cdk/aws-apigateway": "^0.33.0",
+    "@aws-cdk/aws-certificatemanager": "^0.33.0",
+    "@aws-cdk/aws-cloudformation": "^0.33.0",
+    "@aws-cdk/aws-cloudfront": "^0.33.0",
+    "@aws-cdk/aws-cloudtrail": "^0.33.0",
+    "@aws-cdk/aws-cloudwatch": "^0.33.0",
+    "@aws-cdk/aws-cognito": "^0.33.0",
+    "@aws-cdk/aws-ec2": "^0.33.0",
+    "@aws-cdk/aws-events": "^0.33.0",
+    "@aws-cdk/aws-iam": "^0.33.0",
+    "@aws-cdk/aws-kms": "^0.33.0",
+    "@aws-cdk/aws-lambda": "^0.33.0",
+    "@aws-cdk/aws-logs": "^0.33.0",
+    "@aws-cdk/aws-route53": "^0.33.0",
+    "@aws-cdk/aws-s3": "^0.33.0",
+    "@aws-cdk/aws-s3-deployment": "^0.33.0",
+    "@aws-cdk/aws-s3-notifications": "^0.33.0",
+    "@aws-cdk/aws-sam": "^0.33.0",
+    "@aws-cdk/aws-sqs": "^0.33.0",
+    "@aws-cdk/aws-stepfunctions": "^0.33.0",
+    "@aws-cdk/cdk": "^0.33.0",
+    "@aws-cdk/cx-api": "^0.33.0",
+    "@bazel/jasmine": "^0.30.2",
+    "@bazel/typescript": "^0.30.2",
+    "@types/jasmine": "^3.3.12",
+    "@types/node": "^12.0.2",
+    "aws-cdk": "^0.33.0",
+    "tslib": "^1.9.3",
+    "typescript": "^3.4.5"
+  }
+}

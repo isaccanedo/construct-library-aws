@@ -1,0 +1,25 @@
+{
+  "name": "@constructs/serverless-webapp",
+  "version": "0.0.0-PLACEHOLDER",
+  "description": "Constructs for AWS CDK - Serverless Webapp",
+  "main": "./index.js",
+  "typings": "./index.d.ts",
+  "author": "amazon",
+  "license": "MIT",
+  "peerDependencies": {
+    "@aws-cdk/aws-apigateway": "0.0.0-CDK",
+    "@aws-cdk/aws-cognito": "0.0.0-CDK",
+    "@aws-cdk/aws-iam": "0.0.0-CDK",
+    "@aws-cdk/aws-route53": "0.0.0-CDK",
+    "@aws-cdk/cdk": "0.0.0-CDK",
+    "@constructs/static-website": "0.0.0-PLACEHOLDER"
+  },
+  "dependencies": {
+    "tslib": "^1.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awslabs/aws-cdk.git"
+  },
+  "sideEffects": false
+}

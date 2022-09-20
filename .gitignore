@@ -1,0 +1,34 @@
+.DS_STORE
+
+/dist/
+/bazel-out
+e2e_test.*
+node_modules
+
+# Include when developing application packages.
+pubspec.lock
+.c9
+.idea/
+.devcontainer/*
+!.devcontainer/recommended-devcontainer.json
+!.devcontainer/recommended-Dockerfile
+.settings/
+.vscode/launch.json
+.vscode/settings.json
+*.swo
+modules/.settings
+modules/.vscode
+
+# Don't check in secret files
+*secret.js
+
+# Ignore npm/yarn debug log
+npm-debug.log
+yarn-error.log
+
+# build-analytics
+.build-analytics
+
+# User specific bazel settings
+.bazelrc.user
+
